@@ -1,0 +1,58 @@
+{
+  "inv-001": {
+    "outcome": "PAY",
+    "confidence": 0.0,
+    "summary": "No OPENAI_API_KEY set, so this is the rule-based baseline, not the model.",
+    "evidence": [],
+    "mode": "offline"
+  },
+  "inv-002": {
+    "outcome": "PAY",
+    "confidence": 0.0,
+    "summary": "No OPENAI_API_KEY set, so this is the rule-based baseline, not the model.",
+    "evidence": [],
+    "mode": "offline"
+  },
+  "inv-003": {
+    "outcome": "DISPUTE",
+    "confidence": 0.0,
+    "summary": "No OPENAI_API_KEY set, so this is the rule-based baseline, not the model.",
+    "evidence": [],
+    "mode": "offline"
+  },
+  "inv-004": {
+    "outcome": "PAY",
+    "confidence": 0.0,
+    "summary": "No OPENAI_API_KEY set, so this is the rule-based baseline, not the model.",
+    "evidence": [],
+    "mode": "offline"
+  },
+  "inv-005": {
+    "outcome": "PAY",
+    "confidence": 0.0,
+    "summary": "No OPENAI_API_KEY set, so this is the rule-based baseline, not the model.",
+    "evidence": [],
+    "mode": "offline"
+  },
+  "inv-006": {
+    "outcome": "DISPUTE",
+    "confidence": 0.0,
+    "summary": "No OPENAI_API_KEY set, so this is the rule-based baseline, not the model.",
+    "evidence": [],
+    "mode": "offline"
+  },
+  "inv-007": {
+    "outcome": "DISPUTE",
+    "confidence": 0.0,
+    "summary": "No OPENAI_API_KEY set, so this is the rule-based baseline, not the model.",
+    "evidence": [],
+    "mode": "offline"
+  },
+  "inv-008": {
+    "outcome": "PAY",
+    "confidence": 0.0,
+    "summary": "No OPENAI_API_KEY set, so this is the rule-based baseline, not the model.",
+    "evidence": [],
+    "mode": "offline"
+  }
+}

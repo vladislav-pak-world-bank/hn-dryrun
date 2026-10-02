@@ -1,0 +1,15 @@
+---
+description: Visual rules for the single demo screen
+globs: static/**
+alwaysApply: false
+---
+
+The screen must read as institutional software, like a terminal view at a bank or a research tool, not a template.
+
+- Use only the CSS variables already in `static/style.css`. One accent colour (`--accent`). Outcome colours only for the outcome label.
+- No gradients, glows, emoji, icons-as-decoration, rounded cards with shadows, or hero illustrations.
+- Hierarchy through size, weight, and hairline rules (`1px solid var(--rule)`), not boxes.
+- Numbers use tabular figures. Show units and sample sizes next to numbers.
+- Everything a judge needs must be visible at 1440x900 without scrolling: input, outcome, evidence, the evaluation strip.
+- Labels in sentence case. Uppercase only for the small section headings that already use it.
+- Loading and error states are one short line of muted text. Never a spinner overlay or a modal.

@@ -1,0 +1,58 @@
+{
+  "n": 8,
+  "model_correct": 2,
+  "baseline_correct": 2,
+  "model": "offline baseline",
+  "mode": "offline",
+  "run_at": "2026-10-02 02:45 UTC",
+  "rows": [
+    {
+      "id": "inv-001",
+      "label": "PAY",
+      "model": "PAY",
+      "baseline": "PAY"
+    },
+    {
+      "id": "inv-002",
+      "label": "DISPUTE",
+      "model": "PAY",
+      "baseline": "PAY"
+    },
+    {
+      "id": "inv-003",
+      "label": "PAY",
+      "model": "DISPUTE",
+      "baseline": "DISPUTE"
+    },
+    {
+      "id": "inv-004",
+      "label": "DISPUTE",
+      "model": "PAY",
+      "baseline": "PAY"
+    },
+    {
+      "id": "inv-005",
+      "label": "HOLD",
+      "model": "PAY",
+      "baseline": "PAY"
+    },
+    {
+      "id": "inv-006",
+      "label": "DISPUTE",
+      "model": "DISPUTE",
+      "baseline": "DISPUTE"
+    },
+    {
+      "id": "inv-007",
+      "label": "PAY",
+      "model": "DISPUTE",
+      "baseline": "DISPUTE"
+    },
+    {
+      "id": "inv-008",
+      "label": "HOLD",
+      "model": "PAY",
+      "baseline": "PAY"
+    }
+  ]
+}

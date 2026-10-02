@@ -1,0 +1,26 @@
+---
+description: Hackathon build constraints for this repo
+alwaysApply: true
+---
+
+# What this repo is
+
+A 21-hour hackathon entry. Submission closes Sunday 9:00 AM ET. Judges score creativity, technical complexity, and communication from a one-minute video and this repo.
+
+The product spec is the single sentence in `SPEC.md`. If a request does not change what that sentence promises, say so and do not build it.
+
+# Stack (do not change without being asked)
+
+- Python 3.12, FastAPI in `app.py`, deployed to Vercel with zero config. Run locally with `uv run uvicorn app:app --reload`.
+- One static page: `static/index.html`, `static/style.css`, `static/app.js`. Plain JS, no framework, no build step, no npm.
+- Model calls only through `core/llm.py`. Product logic only in `core/engine.py`. On-screen copy only in `core/config.py`.
+- Dependencies are in `pyproject.toml`. Add one only when the standard library and current deps cannot do it, and say which one and why.
+
+# Rules
+
+- Never print, log, commit, or hard-code a key. Keys come from environment variables listed in `.env.example`.
+- The demo must never show a stack trace. Every external call has a timeout and a fallback.
+- Keep `/api/run` returning the same JSON shape: `outcome`, `confidence`, `summary`, `evidence[]`, `baseline`, `mode`, `served_from`.
+- After changing `core/engine.py`, run `uv run pytest -q` and `uv run python eval/evaluate.py` and report both results.
+- Prefer editing an existing file to creating a new one. Do not create docs files unless asked.
+- When unsure what the user wants, ask one question instead of guessing across several files.

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "inv-001",
+    "title": "Clean match",
+    "label": "PAY",
+    "text": "Contract: unit price $12.40 per carton, net 30, no additional fees.\nPO 4471: 500 cartons.\nInvoice 88-201: 500 cartons x $12.40 = $6,200.00. Terms net 30."
+  },
+  {
+    "id": "inv-002",
+    "title": "Price above contract",
+    "label": "DISPUTE",
+    "text": "Contract: unit price $12.40 per carton, net 30.\nPO 4472: 300 cartons.\nInvoice 88-219: 300 cartons x $13.10 = $3,930.00. Terms net 30."
+  },
+  {
+    "id": "inv-003",
+    "title": "Fuel surcharge the contract allows",
+    "label": "PAY",
+    "text": "Contract: unit price $9.00 per pallet. Fuel surcharge of 3% is permitted when diesel exceeds $4.00/gal, with the published index attached.\nPO 5103: 40 pallets.\nInvoice 7731: 40 pallets x $9.00 = $360.00. Fuel surcharge 3% = $10.80 (index attached: $4.21/gal). Total $370.80."
+  },
+  {
+    "id": "inv-004",
+    "title": "Quantity short-shipped",
+    "label": "DISPUTE",
+    "text": "Contract: unit price $55.00 per drum.\nPO 6020: 20 drums. Receiving log: 18 drums received.\nInvoice 6020-A: 20 drums x $55.00 = $1,100.00."
+  },
+  {
+    "id": "inv-005",
+    "title": "Missing receiving record",
+    "label": "HOLD",
+    "text": "Contract: unit price $3.25 per unit, net 45.\nPO 7788: 1,000 units. Receiving log: not yet recorded for this PO.\nInvoice 7788-1: 1,000 units x $3.25 = $3,250.00. Terms net 45."
+  },
+  {
+    "id": "inv-006",
+    "title": "Early-payment terms changed",
+    "label": "DISPUTE",
+    "text": "Contract: unit price $40.00, net 60.\nPO 9012: 25 units.\nInvoice 9012-X: 25 units x $40.00 = $1,000.00. Terms net 15, late fee 2% per month."
+  },
+  {
+    "id": "inv-007",
+    "title": "Rush fee the PO approved",
+    "label": "PAY",
+    "text": "Contract: unit price $18.00. Rush delivery fee of $150 applies when the PO requests rush.\nPO 3355: 60 units, RUSH requested and approved by J. Ortiz.\nInvoice 3355-R: 60 units x $18.00 = $1,080.00. Rush fee $150.00. Total $1,230.00."
+  },
+  {
+    "id": "inv-008",
+    "title": "Unit of measure ambiguous",
+    "label": "HOLD",
+    "text": "Contract: unit price $2.10 per kg.\nPO 4410: 800 kg.\nInvoice 4410-B: 800 units x $2.10 = $1,680.00. Unit of measure on invoice is 'units'; packing slip not attached."
+  }
+]

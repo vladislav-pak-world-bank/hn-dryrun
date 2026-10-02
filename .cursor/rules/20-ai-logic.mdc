@@ -1,0 +1,12 @@
+---
+description: How model calls and evaluation work in this repo
+globs: core/**,eval/**,data/**
+alwaysApply: false
+---
+
+- Every model call returns structured JSON through `llm.structured(system, user, schema)`. Do not parse free text.
+- The schema in `core/engine.py` is strict: every property listed in `required`, `additionalProperties: false`, enums for categorical fields.
+- `engine.baseline()` is the honest comparison. Do not make it smarter to flatter the model, and do not make it dumber than what a busy human would do.
+- `data/samples.json` holds labeled cases. Labels are written by a human before the model is run on them. Never change a label to match a model output.
+- The number on screen comes only from `data/eval.json`, produced by `eval/evaluate.py`. Never type a metric into the UI or the pitch by hand.
+- Use `cheap=True` (the small model) for bulk or extraction steps; the default model for the final decision.

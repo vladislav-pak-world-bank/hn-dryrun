@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loading</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="bar">
+    <div class="brand"><span id="name"></span><span class="tag" id="tagline"></span></div>
+    <div class="meta" id="health"></div>
+  </header>
+
+  <main class="grid">
+    <section class="panel">
+      <h2 id="input-label">Input</h2>
+      <div class="samples" id="samples"></div>
+      <textarea id="input" spellcheck="false"></textarea>
+      <div class="actions">
+        <button id="run" class="primary">Run</button>
+        <span class="hint" id="served"></span>
+      </div>
+    </section>
+
+    <section class="panel" id="result-panel">
+      <h2>Outcome</h2>
+      <div id="empty" class="empty">Pick a sample or paste a case, then Run.</div>
+      <div id="result" hidden>
+        <div class="outcome-row">
+          <span id="outcome" class="outcome"></span>
+          <span id="confidence" class="num"></span>
+        </div>
+        <p id="summary" class="summary"></p>
+        <table class="evidence">
+          <thead><tr><th>Factor</th><th>Evidence</th><th></th></tr></thead>
+          <tbody id="evidence"></tbody>
+        </table>
+        <p class="baseline">Rule baseline: <span id="baseline"></span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="strip" id="eval"></footer>
+
+  <div id="voice-slot"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
